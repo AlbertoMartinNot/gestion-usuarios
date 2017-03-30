@@ -21,8 +21,7 @@ class nuevaController extends Controller
 
 		return $this->render('/home/tse6/Escritorio/symfony/nuevo2/src/nueva/Bundle/nuevaBundle/Resources/views/Default/home.html.twig');
 
-		/*$msg=$this->get('serv.calculadora');
-		return  $msg->suma(3.453,5.987);*/
+	
 
 
 
