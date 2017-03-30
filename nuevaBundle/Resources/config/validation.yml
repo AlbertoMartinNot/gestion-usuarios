@@ -1,0 +1,15 @@
+AppBundle\Entity/Usuario:
+  properties:
+    nombre:
+      - length:
+        min: 3 
+    pass:
+      - length: 
+        min: 4
+    mail:
+      - length: 
+        min: 10
+    edad:
+      - length:
+        min: 1
+      

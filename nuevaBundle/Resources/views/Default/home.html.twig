@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Blog{% endblock %}</title>
+        <h1>Gestion de Usuarios</h1>
+    </head>
+    <body>
+        <div id="sidebar">
+            {% block sidebar %}
+                <ul>
+                    
+                    <li><a href="/nueva/list">Lista de Usuarios Registrados</a></li>
+                    
+                </ul>
+            {% endblock %}
+        </div>
+        <footer id="foot" style="margin-top:200px " >
+        {% block foot %}
+    
+            <p style='font-style:oblique'>Creado por Alberto Martin</p>
+
+
+
+        {% endblock %}
+        </footer>
+    </body>
+</html>

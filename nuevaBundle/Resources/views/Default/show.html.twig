@@ -1,0 +1,21 @@
+<h2>Mostrar Usuario</h2>
+{% for r in user %}
+<div style='border:1px solid black; width:20%; padding:10px;'>-Usuario:  {{r.nombre}}<br> -Contraseña:  {{r.pass}}<br> -Mail:  {{r.mail}} <br> -Edad:  {{r.edad}}
+</div>
+
+<br>
+<a href='/nueva/edit/{{r.id}}'>Editar Usuario</a>&nbsp;&nbsp;
+<a href='/nueva/delete/{{r.id}}'>Borrar Usuario</a>
+{% endfor %}<br><br>
+<a href='/nueva/list'>Volver a la lista de usuarios</a>
+
+      
+       <footer id="foot" style="margin-top:200px " >
+        {% block foot %}
+    
+            <p style='font-style:oblique'>Creado por Alberto Martin</p>
+
+
+
+        {% endblock %}
+        </footer>
